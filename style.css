@@ -61,6 +61,7 @@ section:nth-child(even){
     cursor: pointer;
     font-size: 1.7rem;
     color: var(--green);
+    background: #fff;
 }
 .btn span i {
     padding: .7rem .7rem;
@@ -303,6 +304,48 @@ section:nth-child(even){
     font-size: 1.5rem;
     color: var(--light-color);
     
+}
+
+.book .row{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+
+}
+
+.book .row .image{
+    flex: 1 1 45rem;
+}
+.book .row .image img{
+    width: 100%;
+}
+.book .row form{
+    flex: 1 1 45rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+
+}
+
+.book .row form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+.book .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    color: var(--black);
+    padding: .5rem;
+}
+.book .row form .btn{
+    padding: 1rem 4rem;
 }
 
 
