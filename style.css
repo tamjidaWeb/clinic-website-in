@@ -349,6 +349,64 @@ section:nth-child(even){
 }
 
 
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border: .5rem solid #fff;
+    border-radius: 50%;
+
+}
+.review .box-container .box h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.review .box-container .box .stars i{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.review .box-container .box .text{
+    color: var(--light-color);
+    line-height: 1.8;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.review .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--green);
+    height: 25rem;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 80%;
+    z-index: -1;
+}
+
+
 
 
 
